@@ -7,7 +7,7 @@ Utilise la description de projet fournie par l'utilisateur comme source principa
 1. Lis `AGENTS.md`, `PROJECT.md`, `STATUS.md`, `QUALITY.md`, `README.md` et inspecte la fondation Qwik.
 2. Extrais uniquement les faits fournis : problème, utilisateurs, résultat, contraintes, fonctionnalités essentielles et non-objectifs.
 3. Lorsque des détails secondaires manquent, formule des hypothèses explicites et réversibles. Pose une question seulement si une décision importante ne peut pas être prise sans inventer.
-4. Remplace tous les marqueurs `[[...]]` dans `PROJECT.md` et passe l'état à `INITIALIZED`.
+4. Remplace tous les marqueurs d'initialisation dans `PROJECT.md` et passe l'état à `INITIALIZED`.
 5. Mets `STATUS.md` à jour avec l'état réellement vérifié, les incertitudes et une seule prochaine action.
 6. Adapte `QUALITY.md` uniquement lorsque le projet impose des contrôles supplémentaires. Ne retire jamais les exigences de sécurité, TypeScript, build, accessibilité et tests.
 7. Mets à jour le nom, la description et les métadonnées génériques de l'application sans ajouter de dépendance.
@@ -19,4 +19,4 @@ Utilise la description de projet fournie par l'utilisateur comme source principa
 
 ## Critère de sortie
 
-L'initialisation est réussie lorsque le dépôt ne contient plus aucun marqueur `[[...]]`, que les documents décrivent un projet précis et cohérent, et qu'une première mission limitée peut être lancée sans refaire le cadrage.
+L'initialisation est réussie lorsque les documents ne contiennent plus de valeur modèle, qu'ils décrivent un projet précis et cohérent, et qu'une première mission limitée peut être lancée sans refaire le cadrage.

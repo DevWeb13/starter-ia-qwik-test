@@ -2,7 +2,7 @@ import { staticAdapter } from "@builder.io/qwik-city/adapters/static/vite";
 import { extendConfig } from "@builder.io/qwik-city/vite";
 import baseConfig from "../../vite.config";
 
-const origin = process.env.SITE_ORIGIN ?? "https://example.com";
+const origin = process.env.SITE_ORIGIN ?? "https://www.cars-pat.fr";
 
 export default extendConfig(baseConfig, () => ({
   build: {

@@ -7,7 +7,7 @@ export default component$(() => (
   <QwikCityProvider>
     <head>
       <meta charSet="utf-8" />
-      <meta name="theme-color" content="#f6f5f1" />
+      <meta name="theme-color" content="#0d1113" />
       <RouterHead />
     </head>
     <body lang="fr">

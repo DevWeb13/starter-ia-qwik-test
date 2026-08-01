@@ -12,6 +12,15 @@ Une modification est terminée seulement lorsque :
 - le parcours principal reste utilisable au clavier et à 320 px ;
 - aucun secret ni fichier local sensible n'est ajouté ;
 - `PROJECT.md` et `STATUS.md` restent cohérents avec le résultat réel.
+- Les données locales affichées reposent sur une source vérifiée et les
+  éléments à confirmer ne sont pas présentés comme des garanties.
+- Le formulaire de devis ne réalise aucun envoi réseau et annonce clairement
+  son statut de prototype local.
+- Three.js reste optionnel : le contenu, le contraste et l'appel à l'action
+  fonctionnent avec le fallback statique, sans WebGL et avec les animations
+  réduites.
+- La scène 3D est suspendue lorsqu'elle n'est plus visible et limite son ratio
+  de pixels sur les appareils modestes.
 
 ## Commandes obligatoires
 
@@ -30,6 +39,10 @@ Le raccourci suivant couvre tous les contrôles sauf Playwright :
 pnpm check
 ```
 
+Après le build, vérifier aussi le site avec Playwright en desktop et mobile :
+capture visuelle, navigation clavier, formulaire local, menu mobile, route 404,
+absence de débordement horizontal et absence d'erreur console importante.
+
 ## Règles Qwik
 
 - Utiliser des composants Qwik natifs et la syntaxe `$` lorsque nécessaire.
@@ -47,6 +60,7 @@ pnpm check
 - Aucun débordement horizontal à 320 px.
 - Respect de `prefers-reduced-motion`.
 - Texte compréhensible sans dépendre de la couleur.
+- Le fallback de la scène Three.js est présent dans le HTML initial.
 
 ## Sécurité
 
